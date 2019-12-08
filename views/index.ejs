@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' /> 
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header>
+      <div class="logo_box">
+          <div class="logo_pic_l">
+            <img src="\images\header\header1.png">
+          </div>
+          <div class="logo">Twit...</div>
+          <div class="logo_pic_r">
+            <img src="\images\header\header3.png">
+          </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_container>"
+        <div class="follower_view">
+          <div class="category">category</div>
+          <ul class="category_list">
+            <li>Timeline</li>
+            <li>hot msg</li>
+            <li>body control</li>
+          </ul>
+        </div>
+        <div class="mypage_view">
+          <h2>How are you feeling?</h2>
+          <form method="POST" action="/index.ejs">
+           <select name="temper_chk">
+              <option value="">SELECT!</option>
+              <option value="4">bad</option>
+              <option value="3">good</option>
+              <option value="2">very good</option>
+              <option svalue="1">happy!</option>
+            </select>
+            <textarea name="emotion_meg" cols="60" rows="10" placeholder="ご機嫌いかが？"></textarea>
+            <input type="submit" value="という感じなの">
+          </form>
+        </div>
+      </div>
+      <!-- <h1>こんにちは</h1>
+      <p>Welcome to <%= title %></p> -->
+    </main>
+    <footer>
+      <div class="footer_box">
+        <div class="last_logo">(C) Yumixy...</div>
+      </div>
+    </footer>
   </body>
 </html>
