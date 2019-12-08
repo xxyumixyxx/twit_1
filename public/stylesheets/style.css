@@ -44,65 +44,59 @@ body {
   padding-top: 10px;
 }
 
-main {
-  position:relative;
+.main_container {
+  position:absolute;
   top: 210px;
   left: 0px;
   font-family: 'Sacramento';
-}
-
-.main_container {
-  width: 100%;
   float: left;
+  width: 100%;
+  height: 600px;
+  background-color: #fffff0;
 }
 
 .follower_view{
   float: left;
   width: 30%;
   height: 600px;
+  background-color: #b0e0e6;
 }
 
-.category {
+.follower_view h2 {
   font-size: 50px;
+  text-align: center;
 }
 
 .category_list {
-  font-size: 15px;
+  font-size: 40px;
   list-style: none;
+  margin-left: 170px;
 }
 
 .mypage_view {
   float: left;
   width: 70%;
   height: 600px;
+  background-color: #bc8f8f;
 }
 
-.mypage_view h2{
+.mypage_view h2 {
   font-size:50px;
 }
+
 footer {
-  position: relative;
-  top: 420px;
-  left: 0px;
-}
-
-
-.footer_box {
-  position: relative;
-  top: 600px;
+  position: absolute;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 25px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 50px;
   background-color: #b22222;
 }
 
-.last_logo {
-  font-size: 18px;
-  line-height: 25px;
+footer p {
+  font-size: 20px;
   font-family: 'Sacramento';
+  line-height: 50px;
   color: #db7093;
   text-align: center;
-
 }
